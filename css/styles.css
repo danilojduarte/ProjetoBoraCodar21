@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+
 :root {
 	--color-brand-color: #9333ea;
 	--color-brand-color-light: #a855f7;
@@ -8,4 +20,26 @@
 	--color-stroke-color: #3f3f46;
 	--color-surface-color: #18181b;
 	--color-background-color: #09090b;
+
+    font-family: inter;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+
+    background-color: var(--color-background-color);
+    color: var(--color-text-color-primary);
+}
+
+#app {
+    height: 100vh;
+    width: 42.8rem;
+
+    margin-left: auto;
+
+    background-color: var(--color-surface-color);
+
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
 }
